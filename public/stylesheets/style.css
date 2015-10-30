@@ -1,0 +1,34 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+  overflow: hidden;
+}
+
+div#gallery-container {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  text-align: center;
+}
+
+div#gallery-container img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+div#gallery-container img.active {
+  display: block;
+}
