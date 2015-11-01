@@ -51,7 +51,7 @@ function getNextImageIndex() {
         if(!imagesSeen.has(galleryData.fileNames[i])) {
             imagesSeen.add(galleryData.fileNames[i]);
             lastImageSeen = galleryData.fileNames[i];
-            return galleryData.fileNames[i];
+            return i;
         }
     }
     var tries = 0,
